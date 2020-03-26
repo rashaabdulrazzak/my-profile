@@ -1,27 +1,39 @@
 import React, {Component} from 'react' ;
 import PROJECTS from './data/projects';
+import { MDBContainer,MDBCardImage, MDBTypography,MDBRow, MDBCol, MDBBtn,MDBCard, MDBCardBody, MDBCardTitle, MDBCardText  } from "mdbreact";
+import './Projectstyle.css';
+
 
 class Project extends Component{
   render() {
-    //<div>{this.props.project.title} </div>
-    const {title,image,description,link}=this.props.project;
+       const {id,title,image,description,link,github}=this.props.project;
     return (
-      <div style={{ display:'inline-block', width:300,margin:10}}>
-        <h3>{title} </h3>
-        <img src={image} alt='profile' style ={{ width:250,height:250}}/>
-        <p> {description}</p>
-        <a hef={link}> {link}</a>
-      </div>
+      
+      <MDBCol 	key={id}>
+      <MDBCard>
+        <MDBCardImage className="img-fluid" src={image}
+          waves />
+        <MDBCardBody>
+          <MDBCardTitle>{title}</MDBCardTitle>
+          <MDBCardText>{description}</MDBCardText>
+          <MDBBtn  href={link}>preview</MDBBtn>
+          <MDBBtn href={github}  gradient="purple">code</MDBBtn>
+        </MDBCardBody>
+      </MDBCard>
+    </MDBCol>
+       
     )
   }
 }
+  
 class Projects extends Component {
   render(){
     return(
-      <div>
-        <h2> Highlighted Projects  </h2>
-        <div>
-
+      <MDBContainer>
+        <MDBRow style={{marginTop:'50px'}}>         
+        <MDBTypography tag='h3' variant="h3-responsive" className="text-center font-weight-bold dark-grey-text pt-5 pb-2"> Highlighted Projects  </MDBTypography>
+       </MDBRow>   
+       <MDBRow>
           {
             PROJECTS.map(pproject => {
               return(
@@ -29,8 +41,8 @@ class Projects extends Component {
             );
             })
           }
-         </div>
-      </div>
+       </MDBRow>       
+      </MDBContainer>
     )
   }
 }

@@ -1,27 +1,26 @@
-import twiterIcon from '../assets/twitter_icon.png'
-import linkedInIcon from '../assets/linkedin_icon.png'
-import emailIcon from '../assets/email_icon.png'
-import githubIcon from '../assets/github_icon.png'
+//import twiterIcon from '../assets/twitter_icon.png'
+//import linkedInIcon from '../assets/linkedin_icon.png'
+//import emailIcon from '../assets/email_icon.png'
+//import githubIcon from '../assets/github_icon.png'
 const SOCIALPROFILE =  [
   {
     id:1,
-    image: twiterIcon,
-    link : "https://www.twitter.com"
+    iconName: 'twitter',
+    social:'tw',
+    link : "https://twitter.com/rasha64187348"
+
   },
   {
     id:2,
-    image: emailIcon,
-    link : "https://www.gmail.com"
+    iconName: 'linkedin-in',
+    social:'li',
+    link : "https://www.linkedin.com/in/rasha-abdulrazzak"
   },
   {
     id:3,
-    image: linkedInIcon,
-    link : "https://www.linkedin.com"
-  },
-  {
-    id:4,
-    image: githubIcon,
-    link : "https://www.github.com"
+    iconName: 'github',
+    social:'git',
+    link : "https://github.com/rashaabdulrazzak"
   }
 
 ]
