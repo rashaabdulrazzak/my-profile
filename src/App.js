@@ -1,9 +1,9 @@
 import React,{Component} from 'react'
 import image from './assets/profile.png'
 import { MDBContainer} from "mdbreact";
-
 //import BIRDS from 'vanta/dist/vanta.birds.min'
 import Typical from 'react-typical'
+import StarfieldAnimation from 'react-starfield-animation'
 
 
 class App extends Component{
@@ -17,20 +17,26 @@ toggleDisplayBio = () =>{
   render(){
 
     return(
-      <MDBContainer className='z-depth-1 my-5 pt-5 pb-3 px-5 cd-intro'>
+     
+      <MDBContainer fluid className=' z-depth-1 mt-5 pt-5 pb-3 px-5' style={{background :'#2bbbad '}}>
+         
+         <StarfieldAnimation
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%'
+        }}
+      />
+
           <img src={image} alt='profile' className="profile"  style={{margin:20}}/>
-         <h2  className="cd-headline rotate-1"> <span>I am Rasha a FrontEnd developer   </span>
+         <h2  className="white-text"> <span>I am Rasha a FrontEnd developer   </span>
           <Typical
-        steps={['I know HTML ' ,1000 ,'I Know CSS',500 , 'I Know JavaScript ',400,'I Know React',300]}
+        steps={['I know HTML ' ,500 ,'I Know CSS',500 , 'I Know JavaScript ',500,'I Know React',500]}
         loop={Infinity}
         wrapper="p"
       />
- 
-          </h2>  
-           
-
-   
-          <p> 
+       </h2>     
+          <p  className="white-text "> 
      with a passion for developing websites that help people and make them comfortable when diving into
 websites. With experience in Html5,Css3, JavaScript, and React, I discovered web development through my working in a tech
 company as a project manager. I bring strong skills in team-building and project management that help the company to
