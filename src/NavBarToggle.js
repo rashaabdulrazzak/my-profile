@@ -21,7 +21,7 @@ toggleSingleCollapse = collapseId => {
 
 render() {
   return ( 
-       <MDBNav className="justify-content-center bg-color navbar-expand-sm navbar-dark bg-dark fixed-top transparent py-1">
+       <MDBNav className="justify-content-center bg-color navbar-expand-sm fixed-top transparent py-1">
       <MDBNavItem>
         <MDBNavLink  activeStyle={{ background: '#2125291f'}} className="white-text font-weight-bold py-3 " active to="/" exact >Home</MDBNavLink>
       </MDBNavItem>

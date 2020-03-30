@@ -15,8 +15,8 @@ const PROJECTS = [
     id:2,
     title : 'Edit Your Pizza ',
     description: 'It is an example about how to deal with Forms in Reactjs you can edit a saved cell choose what you wanr and when submitted it will update the selected cell',
-    link : 'https://github.com/rashaabdulrazzak/',
-    github:'https://github.com/rashaabdulrazzak/movie-explorer/',
+    link : 'https://samaromm.github.io/React-Pizza/',
+    github:'https://github.com/rashaabdulrazzak/React-Pizza',
     image: project5,
     alt:'Image by <a href="https://pixabay.com/users/Alexas_Fotos-686414/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1216737">Alexas_Fotos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1216737">Pixabay</a>'
 
