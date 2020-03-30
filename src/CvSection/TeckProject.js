@@ -13,15 +13,15 @@ class TeckProject extends Component {
           {
             PROJECTS.map(pproject => {
               return(<MDBRow>
-                           <LightSpeed left>
+                        <LightSpeed left>
                          <MDBCard className="mb-4" style={{ marginTop: "1rem" }}>
                             <MDBCardBody>
                             <MDBCardTitle>{pproject.title}</MDBCardTitle>
                             <MDBCardTitle tag="h6" sub className="mb-2 text-muted">
-                              <a href={pproject.link} className="card-link">
+                              <a className="btn btn-pink" href={pproject.link} >
                                 view
                             </a>
-                            <MDBBtn color="aqua"><a href={pproject.github}  className="card-link">
+                            <MDBBtn className="default-color"><a href={pproject.github} style={{color:'white'}}>
                             source code
                             </a>
                             </MDBBtn>
@@ -31,7 +31,7 @@ class TeckProject extends Component {
                             </MDBCardText>
                             
                             </MDBCardBody>
-                        </MDBCard>
+                           </MDBCard>
                          </LightSpeed>
                      </MDBRow>            
             );

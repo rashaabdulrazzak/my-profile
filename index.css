@@ -37,7 +37,15 @@ h1,h2,h3,h4,h5{
 .profile{
   height: 200px;
   width:200px;
-  border-radius: 100px
+  border-radius: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+@keyframes example {
+  0%   {transform: rotateX(90deg);}
+  50%  {transform: rotateX(150deg);}
+ 100%  {transform: rotateX(150deg);}
 }
 .bg-color {
     background-color: #2bbbad !important;

@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import image from './assets/profile.png'
 import { MDBContainer} from "mdbreact";
 import Typical from 'react-typical'
-
+import './stars.scss';
 
 class Home extends Component{
 
@@ -10,9 +10,12 @@ class Home extends Component{
 toggleDisplayBio = () =>{
     this.setState({displayBio:!this.state.displayBio});
   }
-  render(){
+   render(){
     return(    
-          <MDBContainer fluid className=' z-depth-1 mt-5 pt-5 pb-3 px-5' style={{background :'#2bbbad ',zIndex:'-2'}}>
+          <MDBContainer fluid className=' z-depth-1 mt-5 pt-5 pb-3 px-5' style={{background :'#2bbbad '}}>
+                <div id="stars" />
+              <div id="stars2" />
+              <div id="stars3" />
          <img src={image} alt='profile' className="profile"  style={{margin:20}}/>
          <h2  className="white-text"> <span>I am Rasha a FrontEnd developer   </span>
          <Typical 
@@ -20,7 +23,7 @@ toggleDisplayBio = () =>{
             loop={Infinity}
           wrapper="p"
         />
-       </h2>     
+       </h2>           
         <p  className="white-text "> 
             With a passion for developing websites that help people and make them comfortable when diving into websites. With experience in Html5,Css3, JavaScript, and React, I discovered web development through my working in a tech
         company as a project manager. I bring strong skills in team-building and project management that help the company to
@@ -34,7 +37,7 @@ toggleDisplayBio = () =>{
                <button className='btn btn-white' onClick={this.toggleDisplayBio} style={{zIndex:1}}> show less </button>
                 </div>): (<div> <button className='btn btn-white'  style={{zIndex:'1'}} onClick={this.toggleDisplayBio}> Read More </button> </div>) 
           }         
-      
+    
       </MDBContainer>
     )
   }
