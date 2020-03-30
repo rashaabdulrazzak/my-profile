@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(assets/roboto-condensed.light.ttf);
+  font-weight :800;
+}
+@font-face {
+  font-family: EconomicaBold;
+  src: url(assets/economica-bold.ttf);
+}
+/*{
+  box-sizing: border-box;
+}*/
+body{
+<<<<<<< HEAD:public/index.css
+=======
+  text-align: center;
+>>>>>>> c570ebbb6a309ce563d994218f8e548e349bf59e:index.css
+  font-size: 20.74pt;
+ /* padding: 2.5%;*/
+  font-family:  'Roboto';
+}
+body,html{
+  margin:0;
+  padding: 0;
+  width: 100%;
+<<<<<<< HEAD:public/index.css
+  height: 100vh;
+}
+
+=======
+  height: 100%;}
+  
+>>>>>>> c570ebbb6a309ce563d994218f8e548e349bf59e:index.css
+h1,h2,h3,h4,h5{
+  font-family: 'Roboto';
+}
+.profile{
+  height: 200px;
+  width:200px;
+  border-radius: 100px
+}
+.bg-color {
+    background-color: #2bbbad !important;
+}
+p{
+  font-size: 12.25pt;
+}
