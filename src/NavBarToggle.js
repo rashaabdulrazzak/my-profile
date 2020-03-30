@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { MDBNav ,MDBNavbar, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBCollapse, MDBContainer,
-MDBHamburgerToggler } from 'mdbreact';
+import { MDBNav,  MDBNavItem, MDBNavLink } from 'mdbreact';
+import './stylenav.css'
 
 class NavbarToggle extends Component {
 state = {
@@ -21,9 +21,9 @@ toggleSingleCollapse = collapseId => {
 
 render() {
   return ( 
-       <MDBNav className="justify-content-center bg-color  navbar-expand-sm navbar-dark fixed-top transparent py-1">
+       <MDBNav className="justify-content-center bg-color navbar-expand-sm navbar-dark bg-dark fixed-top transparent py-1">
       <MDBNavItem>
-        <MDBNavLink  activeStyle={{ background: '#2125291f'}} className="white-text font-weight-bold py-3 "active to="/" exact >Home</MDBNavLink>
+        <MDBNavLink  activeStyle={{ background: '#2125291f'}} className="white-text font-weight-bold py-3 " active to="/" exact >Home</MDBNavLink>
       </MDBNavItem>
       <MDBNavItem>
         <MDBNavLink  activeStyle={{ background: '#2125291f'}} className="white-text font-weight-bold py-3 " to="/projects" exact >Portfolio</MDBNavLink>

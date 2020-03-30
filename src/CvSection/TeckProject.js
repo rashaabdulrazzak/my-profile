@@ -1,17 +1,20 @@
 import React,{Component} from 'react';
 import PROJECTS from '../data/projects';
+import LightSpeed from 'react-reveal';
+
 import { MDBContainer, MDBRow, MDBCol, MDBBtn,MDBCard, MDBCardBody, MDBCardTitle, MDBCardText  } from "mdbreact";
 class TeckProject extends Component {
   render(){
     return(
       <MDBContainer className='my-3 pt-3 pb-3 px-5' >
-        <h2>Technical Projects  </h2>
+        <h3 className="font-weight-bold dark-grey-text pb-2">Technical Projects  </h3>
         <MDBRow>
 
           {
             PROJECTS.map(pproject => {
-              return(<MDBRow> 
-                         <MDBCard className="w-75 mb-4" style={{ marginTop: "1rem" }}>
+              return(<MDBRow>
+                           <LightSpeed left>
+                         <MDBCard className="mb-4" style={{ marginTop: "1rem" }}>
                             <MDBCardBody>
                             <MDBCardTitle>{pproject.title}</MDBCardTitle>
                             <MDBCardTitle tag="h6" sub className="mb-2 text-muted">
@@ -29,10 +32,12 @@ class TeckProject extends Component {
                             
                             </MDBCardBody>
                         </MDBCard>
+                         </LightSpeed>
                      </MDBRow>            
             );
             })
           }
+         
          </MDBRow>
       </MDBContainer>
     )
