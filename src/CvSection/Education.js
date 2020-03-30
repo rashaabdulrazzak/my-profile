@@ -17,7 +17,7 @@ class TeckProject extends Component {
               return(<MDBRow> 
                      <div>
                            <LightSpeed right>
-                        <h5>{edu.name} | {edu.year}</h5>
+                        <h4>{edu.name} | {edu.year}</h4>
                         <p>{edu.specialization}</p>
                     </LightSpeed>
                      </div>

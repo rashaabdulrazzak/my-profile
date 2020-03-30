@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/my-profile/static/css/main.ea01083c.chunk.css",
-    "main.js": "/my-profile/static/js/main.584a4b32.chunk.js",
-    "main.js.map": "/my-profile/static/js/main.584a4b32.chunk.js.map",
+    "main.css": "/my-profile/static/css/main.1d48c2c9.chunk.css",
+    "main.js": "/my-profile/static/js/main.845337af.chunk.js",
+    "main.js.map": "/my-profile/static/js/main.845337af.chunk.js.map",
     "runtime-main.js": "/my-profile/static/js/runtime-main.0763a0d6.js",
     "runtime-main.js.map": "/my-profile/static/js/runtime-main.0763a0d6.js.map",
     "static/css/2.69b54831.chunk.css": "/my-profile/static/css/2.69b54831.chunk.css",
-    "static/js/2.7fe02511.chunk.js": "/my-profile/static/js/2.7fe02511.chunk.js",
-    "static/js/2.7fe02511.chunk.js.map": "/my-profile/static/js/2.7fe02511.chunk.js.map",
+    "static/js/2.ebfcc2b4.chunk.js": "/my-profile/static/js/2.ebfcc2b4.chunk.js",
+    "static/js/2.ebfcc2b4.chunk.js.map": "/my-profile/static/js/2.ebfcc2b4.chunk.js.map",
     "index.html": "/my-profile/index.html",
-    "precache-manifest.e6f1e0a4dd2814720fb8a34306d37304.js": "/my-profile/precache-manifest.e6f1e0a4dd2814720fb8a34306d37304.js",
+    "precache-manifest.e138c083d2be0f9c877048acfc9ea32e.js": "/my-profile/precache-manifest.e138c083d2be0f9c877048acfc9ea32e.js",
     "service-worker.js": "/my-profile/service-worker.js",
     "static/css/2.69b54831.chunk.css.map": "/my-profile/static/css/2.69b54831.chunk.css.map",
-    "static/css/main.ea01083c.chunk.css.map": "/my-profile/static/css/main.ea01083c.chunk.css.map",
-    "static/js/2.7fe02511.chunk.js.LICENSE.txt": "/my-profile/static/js/2.7fe02511.chunk.js.LICENSE.txt",
+    "static/css/main.1d48c2c9.chunk.css.map": "/my-profile/static/css/main.1d48c2c9.chunk.css.map",
+    "static/js/2.ebfcc2b4.chunk.js.LICENSE.txt": "/my-profile/static/js/2.ebfcc2b4.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/my-profile/static/media/arrow_right.8ef6a08c.svg",
     "static/media/all.min.css": "/my-profile/static/media/fa-solid-900.ec763292.svg",
     "static/media/project1.jpg": "/my-profile/static/media/project1.ab15be51.jpg",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.0763a0d6.js",
     "static/css/2.69b54831.chunk.css",
-    "static/js/2.7fe02511.chunk.js",
-    "static/css/main.ea01083c.chunk.css",
-    "static/js/main.584a4b32.chunk.js"
+    "static/js/2.ebfcc2b4.chunk.js",
+    "static/css/main.1d48c2c9.chunk.css",
+    "static/js/main.845337af.chunk.js"
   ]
 }
