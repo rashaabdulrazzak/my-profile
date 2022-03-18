@@ -1,54 +1,62 @@
-import React, {Component} from 'react' ;
-import EXPERIENCES from '../data/experiences';
-import './cv.css';
-import { MDBTypography,MDBContainer, MDBRow, MDBCol,MDBBox } from "mdbreact";
-import LightSpeed from 'react-reveal';
-class Experience extends Component{
+import React, { Component } from "react";
+import EXPERIENCES from "../data/experiences";
+import "./cv.css";
+import { MDBTypography, MDBContainer, MDBRow, MDBCol, MDBBox } from "mdbreact";
+import LightSpeed from "react-reveal";
+class Experience extends Component {
   render() {
- 
-    const {id,title,company,country,description}=this.props.project;
+    const { id, title, company, country, description } = this.props.project;
+    const text = description.split(".");
     return (
-      
-         <li class="step-element pb-0">
-            <div className="step-number">
-            <span className="number">{id}</span>
-            </div>
-            <div className="step-excerpt">
-            <MDBTypography tag='h4' variant="h4" className="font-weight-bold dark-grey-text mb-3"> {company} / {country}</MDBTypography>
-              <MDBBox tag='p' >{title}</MDBBox>
-              <MDBBox tag='p'className="text-muted">{description}</MDBBox>
-            </div>
-          </li>   
-        
-    )
+      <li class="step-element pb-0">
+        <div className="step-number">
+          <span className="number">{id}</span>
+        </div>
+        <div className="step-excerpt">
+          <MDBTypography
+            tag="h4"
+            variant="h4"
+            className="font-weight-bold dark-grey-text mb-3"
+          >
+            {" "}
+            {company} / {country}
+          </MDBTypography>
+          <MDBBox tag="p">{title}</MDBBox>
+          <MDBBox tag="p" className="text-muted">
+            {text.map((item, index) => (
+              <ul key={index}>
+                <li>{item} </li>
+              </ul>
+            ))}
+          </MDBBox>
+        </div>
+      </li>
+    );
   }
 }
 class Experiences extends Component {
-  render(){
-    return(      
+  render() {
+    return (
       <MDBContainer>
-         <LightSpeed left>
-        <h3 class="font-weight-bold dark-grey-text pb-2">EMPLOYMENT HISTORY</h3>
-        <hr class="my-4" />
-          </LightSpeed>
+        <LightSpeed left>
+          <h3 class="font-weight-bold dark-grey-text pb-2">
+            EMPLOYMENT HISTORY
+          </h3>
+          <hr class="my-4" />
+        </LightSpeed>
         <MDBRow>
-        <MDBCol md={8} s={12}>
-           <LightSpeed left>
-            <ol class="step pl-0">
-            {
-                EXPERIENCES.map(pproject => {
-                return(
-                <Experience key={pproject.id} project = {pproject}/>
-                );
-                })
-            }    
-            </ol>
+          <MDBCol md={8} s={12}>
+            <LightSpeed left>
+              <ol class="step pl-0">
+                {EXPERIENCES.map((pproject) => {
+                  return <Experience key={pproject.id} project={pproject} />;
+                })}
+              </ol>
             </LightSpeed>
-        </MDBCol>
+          </MDBCol>
         </MDBRow>
       </MDBContainer>
-
-    )
+    );
   }
 }
-export default  Experiences 
+export default Experiences;

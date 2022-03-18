@@ -1,4 +1,3 @@
-import project22 from "../assets/project1.jpg";
 import project1 from "../assets/near_by_example.png";
 import project2 from "../assets/nearinarabic.png";
 import project3 from "../assets/letssuport.png";
@@ -6,6 +5,8 @@ import project4 from "../assets/girls_doing_tech.png";
 import project5 from "../assets/reach_health.png";
 import project6 from "../assets/gallery_app.png";
 import project7 from "../assets/chat_app.png";
+import project8 from "../assets/notes_app.png";
+import project9 from "../assets/film1.jpg";
 import project52 from "../assets/project2.png";
 import project66 from "../assets/project3.png";
 const PROJECTS = [
@@ -67,7 +68,7 @@ const PROJECTS = [
     link: "https://rashaabdulrazzak.github.io/GalleryArt/",
     github: "https://github.com/rashaabdulrazzak/GalleryArt",
     image: project6,
-    alt: 'Image by a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=767864">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=767864">Pixabay',
+    alt: "Gallery App",
   },
   {
     id: 7,
@@ -77,20 +78,30 @@ const PROJECTS = [
     link: "https://rasha-chatapp.herokuapp.com/",
     github: "https://github.com/rashaabdulrazzak/chat-app",
     image: project7,
-    alt: 'Image by a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=767864">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=767864">Pixabay',
+    alt: "Chat App",
   },
   {
     id: 8,
+    title: "Note App",
+    description:
+      "It is a fullstack app where you can add your notes,edit them and delete them. it also offers the chance to search for a specific note. The website is built using Node.js, Express.js for the backend. It uses Mongodb as a database and CSS3,html5 and javascript for the frontend",
+    link: "https://my-notes-backend.onrender.com/",
+    github: "https://github.com/rashaabdulrazzak/Notes",
+    image: project8,
+    alt: "Note App",
+  },
+  {
+    id: 9,
     title: "Movie Explorer",
     description:
       "we have create pages like home page and search bar also there is a movie detail page and actors  we use Reactjs to build the project and we get  the API from themoviedb  ",
     link: "https://github.com/rashaabdulrazzak/movie-explorer/",
     github: "https://github.com/rashaabdulrazzak/movie-explorer/",
-    image: project22,
-    alt: 'Image by a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=767864">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=767864">Pixabay',
+    image: project9,
+    alt: "Movie Explorer",
   },
   {
-    id: 9,
+    id: 10,
     title: "Edit Your Pizza ",
     description:
       "It is an example about how to deal with Forms in Reactjs you can edit a saved cell choose what you wanr and when submitted it will update the selected cell",
@@ -100,7 +111,7 @@ const PROJECTS = [
     alt: 'Image by <a href="https://pixabay.com/users/Alexas_Fotos-686414/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1216737">Alexas_Fotos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1216737">Pixabay</a>',
   },
   {
-    id: 10,
+    id: 11,
     title: "Movie Website Template ",
     description:
       "It is a template for a movie that contains a home/blog/movies/movie detail/and about pages. the template is implemented using HTML5-CSS3-Bootstrap4",
