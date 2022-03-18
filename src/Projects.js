@@ -19,13 +19,21 @@ class Project extends Component {
   render() {
     const { id, title, image, description, link, github } = this.props.project;
     return (
-      <MDBCol top="10" size={4} key={id}>
+      <MDBCol
+        size="12"
+        sm="2"
+        lg="4"
+        md="4"
+        xs="1"
+        key={id}
+        style={{ paddingTop: "1rem", paddingBottom: "1rem" }}
+      >
         <Fade left>
           <MDBCard>
             <MDBCardImage className="img-fluid" src={image} waves />
             <MDBCardBody>
               <MDBCardTitle>{title}</MDBCardTitle>
-              <MDBCardText>{description}</MDBCardText>
+              <MDBCardText className="fixes-width">{description}</MDBCardText>
               <MDBBtn href={link}>preview</MDBBtn>
               <MDBBtn href={github} gradient="purple">
                 code
