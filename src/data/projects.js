@@ -45,7 +45,7 @@ const PROJECTS = [
     title: "Girls Doing Tech",
     description:
       "A portfolio website for a group of girls to work together. The website is implemented using html5-Bootstrap-CSS3 for frontend and php for backend. The website supports three languages Arabic, Turkish and English",
-    link: "http://girlsdoingtech.rf.gd/indexar.php?i=1",
+    link: "https://girlsdoingtech.com/",
     github: "https://github.com/rashaabdulrazzak/gdt-final",
     image: project4,
     alt: "girls doing tech",
